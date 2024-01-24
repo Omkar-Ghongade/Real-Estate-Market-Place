@@ -14,8 +14,8 @@ mongoose.connect(process.env.MONGO).then(()=>{
 const app=express();
 app.use(express.json());
 
-app.listen(9000,()=>{
-    console.log('Server on port 9000');
+app.listen(3000,()=>{
+    console.log('Server on port 3000');
 });
 
 app.use("/api/user",userRouter);
